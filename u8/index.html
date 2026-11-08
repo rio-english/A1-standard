@@ -14,18 +14,33 @@ section{margin:22px 0}
 section > h2{font-size:22px;border-left:8px solid var(--yel);padding-left:10px;margin-bottom:2px}
 section > p{color:var(--mute);margin-bottom:10px}
 .done{margin-left:8px;font-size:13px;color:#278F4E;font-weight:800;white-space:nowrap}
-.sw{display:none;background:#FFF5CC;border:2px solid var(--yel);border-radius:14px;padding:10px 14px;margin:0 0 14px}
+.sw{display:none;align-items:flex-start;gap:10px;background:#FFF5CC;border:2px solid var(--yel);border-radius:14px;padding:10px 14px;margin:0 0 14px}
+.sw span{flex:1}.sw .x{border:0;background:none;font-size:18px;line-height:1;color:var(--mute);cursor:pointer;padding:2px 4px}
 .sw a{color:var(--red);font-weight:800}
 footer{color:var(--mute);font-size:13px;text-align:center;margin:28px 0 10px}
-footer a{color:var(--navy);font-weight:700;margin:0 6px}.wrap{max-width:1180px;margin:0 auto;padding:20px 28px calc(28px + env(safe-area-inset-bottom))}
-header{padding:30px 32px}header h1{font-size:36px}
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:18px}
+footer a{color:var(--navy);font-weight:700;margin:0 6px}.wrap{max-width:1320px;margin:0 auto;padding:22px clamp(16px,3vw,36px) calc(28px + env(safe-area-inset-bottom))}
+header{padding:30px clamp(20px,3vw,40px)}header h1{font-size:clamp(28px,3.4vw,40px)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:18px}
 a.card{padding:22px}
 a.card h2{font-size:24px;margin:6px 0 2px}a.card h3{font-size:20px;margin:6px 0 2px}
-a.card p{font-size:15px}</style></head><body><div class="wrap"><a class="crumb" href="../index.html">← 返回首页</a><div class="sw" id="sw">看起来你在用别的设备：<a href="#">打开 <b></b></a>，显示效果更好。</div><header><div class="k">RIO ENGLISH LEARNING · iPad 版</div><h1>Unit 8 学习</h1><p>Holidays · 假期</p></header><section><h2>01 重点</h2><p>先学这些：知识讲解、词汇、写作和听力</p><div class="grid"><a class="card" data-k="u8/key/preview.html" href="key/preview.html"><div class="i">🧭</div><h3>先导预习</h3><p>新课开始前先看：每课的词汇、语法、情景用语，点英文就能听</p><span class="mb">4 MB</span></a><a class="card" data-k="u8/key/grammar.html" href="key/grammar.html"><div class="i">📐</div><h3>语法知识点与精选练习</h3><p>第 2 页是语法清单，点一下跳到对应讲解；练习点题号看答案</p><span class="mb">2 MB</span></a><a class="card" data-k="u8/key/vocab.html" href="key/vocab.html"><div class="i">📚</div><h3>词汇与情景用语汇总</h3><p>必会单词图卡 + 情景用语 + 发音，点英文听美音朗读</p><span class="mb">3 MB</span></a><a class="card" data-k="u8/key/writing.html" href="key/writing.html"><div class="i">✍️</div><h3>写作专项</h3><p>写作知识 → 课本写作课 → 写作任务；参考答案分极简版和扩展版</p><span class="mb">1 MB</span></a><a class="card" data-k="u8/key/listening.html" href="key/listening.html"><div class="i">🎧</div><h3>听力专项</h3><p>录音可调速；看原文和逐句翻译；做题后看答案和考点</p><span class="mb">5 MB</span></a></div></section><section><h2>02 练习</h2><p>学完再练：练习题和单词自测</p><div class="grid"><a class="card" data-k="u8/practice/exercises.html" href="practice/exercises.html"><div class="i">📝</div><h3>全部练习题</h3><p>每道题标了重要程度；点题号或“答案 ▾”看答案</p><span class="mb">4 MB</span></a><a class="card" data-k="u8/practice/selftest.html" href="practice/selftest.html"><div class="i">✅</div><h3>必会单词与固定搭配自测</h3><p>看中文说英文，点一下核对答案</p><span class="mb"><1 MB</span></a><a class="card" data-k="u8/practice/random-test.html" href="practice/random-test.html"><div class="i">🎲</div><h3>必会单词随机自测</h3><p>随机抽词测试，适合每天花 5 分钟复习</p><span class="mb"><1 MB</span></a></div></section><footer>Rio English Learning · iPad 版 · 换设备学习：<a href="../../rio-english-phone/index.html">📱 手机版</a> <a href="../../rio-english-pc/index.html">💻 电脑版</a><br>文件较大的页面（如听力专项）第一次打开需要等一会儿，建议连 Wi-Fi</footer></div><script>(function(){var w=Math.min(screen.width,screen.height),t=('ontouchstart' in window)||navigator.maxTouchPoints>1,
-want=(t&&w<600)?'phone':(t?'ipad':'pc');if(want!=='ipad'){var s=document.getElementById('sw');if(s){s.style.display='block';
-s.querySelector('a').href='../../'+{phone:'rio-english-phone',ipad:'rio-english-ipad',pc:'rio-english-pc'}[want]+'/index.html';
-s.querySelector('b').textContent={phone:'手机版',ipad:'iPad 版',pc:'电脑版'}[want]}}})();
+a.card p{font-size:15px}
+.units{display:grid;grid-template-columns:repeat(auto-fit,minmax(310px,1fr));gap:22px;align-items:start}
+.unit{background:#fff;border-radius:18px;padding:18px 20px;box-shadow:0 2px 8px rgba(0,0,0,.08)}
+.unit h2{font-size:24px}.unit .sub{color:var(--mute);font-size:14px;margin-bottom:8px}
+.unit h4{margin:12px 0 4px;font-size:15px;border-left:6px solid var(--yel);padding-left:8px}
+.unit ul{list-style:none}.unit li a{display:flex;gap:8px;padding:5px 6px;border-radius:8px;color:var(--ink);text-decoration:none}
+.unit li .s{margin-left:auto;color:var(--mute);font-size:12px;white-space:nowrap}
+.unit .go{display:inline-block;margin-top:10px;color:var(--red);font-weight:800;text-decoration:none}
+/* home adapts: narrow screen → unit cards; wider (iPad, computer) → every page of every unit on one screen */
+.home-cards{display:none}
+@media (max-width:699px){.home-cards{display:grid}.units{display:none}}
+/* touch (iPad): bigger tap targets; mouse (computer): hover effects */
+@media (pointer:coarse){.unit li a{padding:9px 8px}.unit .go{padding:6px 0}}
+@media (hover:hover) and (pointer:fine){a.card{transition:transform .15s,box-shadow .15s}
+ a.card:hover{transform:translateY(-3px);box-shadow:0 8px 20px rgba(0,0,0,.12)}.unit li a:hover{background:var(--bg)}}</style></head><body><div class="wrap"><a class="crumb" href="../index.html">← 返回首页</a><div class="sw" id="sw"><span>看起来你在用手机：建议打开 <a href="../../A1-mobile/index.html">📱 手机版</a>，竖屏排版，点英文有真人朗读。</span><button class="x" aria-label="关闭">✕</button></div><header><div class="k">RIO ENGLISH LEARNING · 平板/电脑版</div><h1>Unit 8 学习</h1><p>Holidays · 假期</p></header><section><h2>01 重点</h2><p>先学这些：知识讲解、词汇、写作和听力</p><div class="grid"><a class="card" data-k="u8/key/preview.html" href="key/preview.html"><div class="i">🧭</div><h3>先导预习</h3><p>新课开始前先看：每课的词汇、语法、情景用语，点英文就能听</p><span class="mb">4 MB</span></a><a class="card" data-k="u8/key/grammar.html" href="key/grammar.html"><div class="i">📐</div><h3>语法知识点与精选练习</h3><p>第 2 页是语法清单，点一下跳到对应讲解；练习点题号看答案</p><span class="mb">2 MB</span></a><a class="card" data-k="u8/key/vocab.html" href="key/vocab.html"><div class="i">📚</div><h3>词汇与情景用语汇总</h3><p>必会单词图卡 + 情景用语 + 发音，点英文听美音朗读</p><span class="mb">3 MB</span></a><a class="card" data-k="u8/key/writing.html" href="key/writing.html"><div class="i">✍️</div><h3>写作专项</h3><p>写作知识 → 课本写作课 → 写作任务；参考答案分极简版和扩展版</p><span class="mb">1 MB</span></a><a class="card" data-k="u8/key/listening.html" href="key/listening.html"><div class="i">🎧</div><h3>听力专项</h3><p>录音可调速；看原文和逐句翻译；做题后看答案和考点</p><span class="mb">5 MB</span></a></div></section><section><h2>02 练习</h2><p>学完再练：练习题和单词自测</p><div class="grid"><a class="card" data-k="u8/practice/exercises.html" href="practice/exercises.html"><div class="i">📝</div><h3>全部练习题</h3><p>每道题标了重要程度；点题号或“答案 ▾”看答案</p><span class="mb">4 MB</span></a><a class="card" data-k="u8/practice/selftest.html" href="practice/selftest.html"><div class="i">✅</div><h3>必会单词与固定搭配自测</h3><p>看中文说英文，点一下核对答案</p><span class="mb"><1 MB</span></a><a class="card" data-k="u8/practice/random-test.html" href="practice/random-test.html"><div class="i">🎲</div><h3>必会单词随机自测</h3><p>随机抽词测试，适合每天花 5 分钟复习</p><span class="mb"><1 MB</span></a></div></section><footer>Rio English Learning · 当前：💻 平板/电脑版 · 换成 <a href="../../A1-mobile/index.html">📱 手机版</a>（竖屏排版，点英文有真人朗读）<br>文件较大的页面（如听力专项）第一次打开需要等一会儿，建议连 Wi-Fi</footer></div><script>(function(){var w=Math.min(screen.width,screen.height),t=('ontouchstart' in window)||navigator.maxTouchPoints>1,
+want=(t&&w<600)?'phone':'std',s=document.getElementById('sw');if(!s||want==='std')return;
+try{if(sessionStorage.getItem('rio-sw-off'))return}catch(e){}s.style.display='flex';
+s.querySelector('.x').onclick=function(){s.style.display='none';try{sessionStorage.setItem('rio-sw-off','1')}catch(e){}}})();
 try{var v=JSON.parse(localStorage.getItem("rio-visited")||"{}");document.querySelectorAll("[data-k]").forEach(function(a){
 if(v[a.dataset.k]){var h=a.querySelector("h3,h2,.t");if(h)h.insertAdjacentHTML("beforeend","<span class=done>✓ 看过</span>")}
 a.addEventListener("click",function(){v[a.dataset.k]=1;localStorage.setItem("rio-visited",JSON.stringify(v))})})}catch(e){}</script></body></html>
