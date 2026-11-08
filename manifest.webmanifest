@@ -9,6 +9,13 @@
  "orientation": "any",
  "background_color": "#F4F2EA",
  "theme_color": "#1C2541",
+ "id": "./",
+ "related_applications": [
+  {
+   "platform": "webapp",
+   "url": "https://rio-english.github.io/A1-standard/manifest.webmanifest"
+  }
+ ],
  "icons": [
   {
    "src": "icons/icon-192.png",
